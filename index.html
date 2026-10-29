@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FBFAF7">
+  <meta name="description" content="Sigue explorando el universo de Studio Ghibli entre páginas. Una selección de libros y avisos sobre incorporaciones en español al catálogo internacional.">
+  <meta property="og:title" content="Lecturas de Studio Ghibli en español">
+  <meta property="og:description" content="Para cuando te quedas con ganas de más Ghibli. Descubre lecturas en español y solicita recibir los próximos avisos.">
+  <meta property="og:type" content="website">
+  <title>Lecturas de Studio Ghibli en español</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header wrap">
+    <a class="brand" href="#" aria-label="Studio Ghibli, inicio"><span>Studio Ghibli<span class="brand-dot" aria-hidden="true">.</span></span></a>
+  </header>
+  <main id="contenido">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">Para cuando te quedas con ganas de <em>más Ghibli.</em></h1>
+        <p>Libros sobre las películas del estudio, el manga de Nausicaä y <i>El viaje de Shuna</i>. Recibe una selección de avisos cuando se incorporen libros o ediciones en español al catálogo internacional.</p>
+        <p class="promise">El título, la editorial y un enlace a su ficha.<br><strong>Sin tener que revisar el catálogo cada vez.</strong></p>
+      </div>
+      <aside class="signup" id="suscribirse" aria-labelledby="signup-title">
+        <h2 id="signup-title">Quiero recibir los avisos</h2>
+        <p>Lecturas en español para seguir explorando el universo de Ghibli, a su ritmo.</p>
+        <form id="subscribe-form">
+          <label for="email">Tu correo electrónico</label>
+          <input id="email" name="email" type="email" placeholder="tu@email.com" autocomplete="email" required maxlength="254" aria-describedby="form-help">
+          <label class="consent"><input id="consent" name="consent" type="checkbox" required><span>Quiero recibir estos avisos y acepto el uso de mi correo para esta finalidad.</span></label>
+          <a class="privacy-link" href="#privacidad">Lee la información de privacidad</a>
+          <button class="button primary" type="submit">Suscribirme <span aria-hidden="true">↗</span></button>
+          <p id="form-help" class="fineprint">Abriremos tu aplicación de correo para enviar la solicitud. El alta se gestiona manualmente.</p>
+          <p class="unsubscribe-note">Sin una frecuencia fija. Puedes pedir la baja cuando quieras.</p>
+        </form>
+        <div id="form-result" class="form-result" role="status" tabindex="-1" hidden>
+          <strong>Tu solicitud está preparada.</strong>
+          <p>Envía el correo que hemos preparado para solicitar el alta. Aún no estás suscrito: recibirás una respuesta cuando se gestione.</p>
+          <p>Si no se ha abierto tu correo:</p>
+          <div class="fallback-actions"><a id="gmail-link" target="_blank" rel="noopener noreferrer">Abrir en Gmail ↗</a><button id="copy-request" type="button">Copiar solicitud</button></div>
+          <small>Destinatario: lucialbiach@gmail.com</small>
+        </div>
+        <noscript><p>Para solicitar el alta, escribe a <a href="mailto:lucialbiach@gmail.com?subject=Alta%20en%20Entre%20p%C3%A1ginas">lucialbiach@gmail.com</a> indicando que quieres recibir los avisos y aceptas el uso de tu correo para esa finalidad.</p></noscript>
+      </aside>
+    </section>
+    <section class="benefits wrap" aria-labelledby="benefits-title">
+      <div class="section-heading"><h2 id="benefits-title">Ghibli también en tu estantería</h2></div>
+      <div class="benefit-grid">
+        <article class="benefit reveal"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="3" width="22" height="26" rx="2"/><path d="M10 3v26M22 3v26M5 10h5m-5 6h5m-5 6h5m12-12h5m-5 6h5m-5 6h5M10 16h12"/></svg><h3>Vuelve a tus películas favoritas</h3><p>Detente en una escena, descubre sus detalles y conoce a quienes imaginaron esos mundos.</p></article>
+        <article class="benefit reveal"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 8C12 4 6 4 2 5v21c6-2 10-1 14 2 4-3 8-4 14-2V5c-4-1-10-1-14 3Zm0 0v20"/></svg><h3>Lee otras historias de Miyazaki</h3><p>Descubre el trazo y la imaginación del autor en historias que escribió e ilustró sobre papel.</p></article>
+        <article class="benefit reveal"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="6" width="28" height="21" rx="2"/><path d="m3 8 13 10L29 8M3 26l9-11m17 11-9-11"/></svg><h3>Tu próxima lectura, en español</h3><p>Recibe una selección de incorporaciones al catálogo, con la información necesaria para seguir leyendo.</p></article>
+      </div>
+    </section>
+    <section class="books wrap" id="lecturas" aria-labelledby="books-title">
+      <div class="section-heading"><h2 id="books-title">Libros de Ghibli en español</h2></div>
+      <p class="section-intro">Algunos de los libros en español que ya aparecen en el catálogo internacional.</p>
+      <div class="book-grid">
+        <article class="book reveal">
+          <div class="book-stage stage-blue"><img src="obras-completas.webp" alt="Portada de Studio Ghibli Complete Works" width="295" height="361" loading="lazy"></div>
+          <div class="book-copy"><h3>Studio Ghibli <br>Complete Works</h3><p>Escenas, temas y perfiles de los directores para volver a las películas y encontrar nuevos detalles.</p><p class="publisher">Planeta Cómic</p></div>
+        </article>
+        <article class="book reveal">
+          <div class="book-stage stage-sand"><img src="shuna.webp" alt="Portada de El viaje de Shuna, ilustrada por Hayao Miyazaki" width="295" height="409" loading="lazy"></div>
+          <div class="book-copy"><h3>El viaje de Shuna</h3><p>Un joven parte en busca de unas semillas para alimentar a su pueblo. Una historia escrita e ilustrada por Miyazaki.</p><p class="publisher">Salamandra Graphic</p></div>
+        </article>
+        <article class="book reveal">
+          <div class="book-stage stage-green"><img src="nausicaa.webp" alt="Portada del primer volumen de Nausicaä del valle del viento" width="295" height="414" loading="lazy"></div>
+          <div class="book-copy"><h3>Nausicaä del <br>valle del viento</h3><p>El primer volumen del manga de Miyazaki: otra forma de adentrarte en el mundo que inspiró la película.</p><p class="publisher">Planeta Cómic</p></div>
+        </article>
+      </div>
+    </section>
+    <section class="closing" aria-labelledby="closing-title">
+      <div class="wrap closing-inner"><h2 id="closing-title">Recibe los próximos avisos</h2><p>El título, la editorial y el enlace a su ficha para que puedas consultarla sin revisar el catálogo cada vez.</p><a class="button primary" href="#suscribirse">Recibir avisos <span aria-hidden="true">↗</span></a></div>
+    </section>
+  </main>
+  <footer class="wrap site-footer">
+    <nav aria-label="Información del sitio"><a href="#aviso-legal">Aviso legal</a><a href="#privacidad">Privacidad</a><a href="#cookies">Cookies</a><a href="https://www.ghibli.jp/international/publications/" target="_blank" rel="noopener noreferrer">Catálogo oficial de Ghibli <span aria-hidden="true">↗</span></a></nav>
+    <div class="legal-panels">
+      <details id="aviso-legal"><summary>Aviso legal</summary><div><p>Lecturas de Ghibli es una iniciativa editorial independiente, sin relación oficial con Studio Ghibli, Planeta Cómic o Salamandra Graphic. No es una tienda. Las marcas, obras y portadas pertenecen a sus respectivos titulares y se muestran para identificar las lecturas.</p><p>Gestión y contacto: <a href="mailto:lucialbiach@gmail.com">lucialbiach@gmail.com</a>. Los títulos y editoriales se han contrastado con el catálogo internacional de Studio Ghibli y las fichas editoriales el 29 de octubre de 2026.</p></div></details>
+      <details id="privacidad"><summary>Información de privacidad</summary><div><p>Este formulario prepara una solicitud en tu aplicación de correo. La web no guarda tu dirección ni la envía por sí sola. Solo al enviar tú el mensaje se comunica tu dirección y tu solicitud a <a href="mailto:lucialbiach@gmail.com">lucialbiach@gmail.com</a>, que gestiona las altas y los avisos de manera manual.</p><p>La finalidad es atender tu solicitud y enviarte una selección de avisos sobre libros o ediciones en español incorporados al catálogo internacional de Studio Ghibli, con tu consentimiento. Se utilizará el correo mientras mantengas la suscripción. Puedes retirar el consentimiento, solicitar la baja, acceder, corregir o pedir la eliminación de tus datos escribiendo a esa misma dirección. Si lo consideras necesario, puedes presentar una reclamación ante la Agencia Española de Protección de Datos.</p><p>Los mensajes se gestionan mediante Gmail, de Google, y están sujetos también a las condiciones del proveedor de correo. Las direcciones no se muestran a otros suscriptores. No envíes información personal adicional: basta con tu correo y la solicitud.</p></div></details>
+      <details id="cookies"><summary>Cookies y almacenamiento</summary><div><p>Esta landing no instala cookies de publicidad o analítica ni utiliza almacenamiento local para tu correo. Las portadas, los estilos y el código se sirven con la página. Si abres Gmail o el catálogo oficial, se aplican las políticas de esos servicios.</p></div></details>
+    </div>
+    <p class="independent-note">Proyecto independiente, sin afiliación con Studio Ghibli ni con las editoriales.</p>
+  </footer>
+</body>
+</html>
+
+
